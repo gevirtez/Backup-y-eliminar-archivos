@@ -10,7 +10,7 @@ from office365.runtime.auth.user_credential import UserCredential
 site_url = os.environ.get("SHAREPOINT_SITE_URL_2")
 username = os.environ.get('REMITENTE')
 password = os.environ.get('PASSWORD')
-sharepoint_folder = "Documentos compartidos/Backups/EDT 238"
+sharepoint_folder = "Documentos compartidos/Backups/EDT 240"
 
 if not site_url or not username or not password:
     messagebox.showerror("Error", "Las credenciales de SharePoint no están configuradas en las variables de entorno.")
