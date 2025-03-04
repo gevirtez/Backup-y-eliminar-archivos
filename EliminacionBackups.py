@@ -23,8 +23,6 @@ subfolders = main_folder.folders.get().execute_query()
 # Fecha límite para eliminar backups (4 meses atrás)
 fecha_limite = datetime.now() - timedelta(days=120)
 
-print(f"Fecha límite para eliminación: {fecha_limite.strftime('%Y-%m-%d')}")
-
 for subfolder in subfolders:
     folder_name = subfolder.properties["Name"]
     folder_path = f"{backup_folder}/{folder_name}"
